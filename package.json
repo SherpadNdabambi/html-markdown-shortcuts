@@ -1,7 +1,7 @@
 {
   "name": "html-markdown-shortcuts",
   "displayName": "HTML & Markdown Shortcuts",
-  "description": "Save time while writing HTML and Markdown with useful shortcuts.",
+  "description": " Save time while writing HTML and Markdown with useful shortcuts.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.78.0"
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "html-markdown-shortcuts.helloWorld",
-        "title": "Hello World"
+        "command": "html-markdown-shortcuts.changeCase",
+        "title": "Change Case"
       }
     ]
   },

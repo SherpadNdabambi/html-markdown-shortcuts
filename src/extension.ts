@@ -1,5 +1,9 @@
+// declare global variables
+let originalText: string;
+
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
+import { escape } from 'querystring';
 import * as vscode from 'vscode';
 
 // This method is called when your extension is activated
@@ -8,19 +12,94 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "html-markdown-shortcuts" is now active!');
+	console.log('HTML & Markdown Shortcuts is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('html-markdown-shortcuts.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from HTML &amp; Markdown Shortcuts!');
+	let changeCase = vscode.commands.registerCommand('html-markdown-shortcuts.changeCase', () => {
+
+		// declare local constants
+		const editor = vscode.window.activeTextEditor,
+			selection = editor?.selection;
+	
+		if (selection && !selection.isEmpty) {
+
+			// declare local constants
+			const selectionRange = new vscode.Range(selection.start.line, selection.start.character, selection.end.line, selection.end.character),
+				selectedText = editor.document.getText(selectionRange);
+
+			if (!originalText || originalText.toLocaleUpperCase() !== selectedText.toLocaleUpperCase())
+				originalText = selectedText;
+
+			if (isTitleCase(selectedText))
+				vscode.commands.executeCommand("editor.action.transformToUppercase");
+			else
+				if (isUpperCase(selectedText))
+					editor.edit((selectedText) => {
+						selectedText.replace(selection, originalText);
+					});
+				else vscode.commands.executeCommand("editor.action.transformToTitlecase");
+		}
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(changeCase);
 }
 
 // This method is called when your extension is deactivated
 export function deactivate() {}
+
+/**
+ * 
+ * @param {String} text
+ * @returns {Boolean}
+ */
+function isLowerCase (text: string) {
+
+	// declare local variables
+	let result = true;
+
+	text.split('').forEach((letter) => {
+
+		if (typeof(letter) === "string")
+			if (letter !== letter.toLowerCase()) result = false;
+	});
+	return result;
+}
+
+/**
+ * 
+ * @param {String} sentence
+ * @returns {Boolean}
+ */
+function isTitleCase (sentence: string) {
+
+	// declare local variables
+	let result = true;
+
+	if (isUpperCase(sentence)) result = false;
+	sentence.split(' ').forEach((word) => {
+		
+		if (typeof(word[0]) === "string")
+			if (word[0] !== word[0].toUpperCase()) result = false;
+	});
+	return result;
+}
+
+/**
+ * 
+ * @param {String} text
+ * @returns {Boolean}
+ */
+function isUpperCase (text: string) {
+
+	// declare local variables
+	let result = true;
+
+	text.split('').forEach((letter) => {
+
+		if (typeof(letter) === "string")
+			if (letter !== letter.toUpperCase()) result = false;
+	});
+		return result;
+}

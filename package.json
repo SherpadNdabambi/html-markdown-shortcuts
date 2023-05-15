@@ -16,6 +16,10 @@
       {
         "command": "html-markdown-shortcuts.changeCase",
         "title": "Change Case"
+      },
+      {
+        "command": "html-markdown-shortcuts.toggleStrikeThrough",
+        "title": "Toggle Strike Through"
       }
     ]
   },

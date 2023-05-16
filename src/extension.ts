@@ -17,7 +17,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let changeCase = vscode.commands.registerCommand('html-markdown-shortcuts.changeCase', () => {
+	let changeCase = vscode.commands.registerCommand("html-markdown-shortcuts.changeCase", () => {
 
 		// declare local constants
 		const editor = vscode.window.activeTextEditor,
@@ -52,7 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	});
 
-	let toggleStrikeThrough = vscode.commands.registerCommand('html-markdown-shortcuts.toggleStrikeThrough', () => {
+	let toggleStag = vscode.commands.registerCommand("html-markdown-shortcuts.toggleStag", () => {
 
 		// declare local constants
 		const editor = vscode.window.activeTextEditor,
@@ -81,7 +81,36 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 	});
 
-	context.subscriptions.push(changeCase, toggleStrikeThrough);
+	let toggleTildeWrap = vscode.commands.registerCommand("html-markdown-shortcuts.toggleTildeWrap", () => {
+
+		// declare local constants
+		const editor = vscode.window.activeTextEditor,
+			selection = editor?.selection;
+
+			if (selection && !selection.isEmpty) {
+
+				const selectionRange = new vscode.Range(selection.start.line, selection.start.character, selection.end.line, selection.end.character),
+					selectedText = editor.document.getText(selectionRange);
+
+				editor.edit((textEdit) => {
+
+					// declare local constants
+					const editor = vscode.window.activeTextEditor;
+
+					if (selectedText.slice(0, 2) === "~~") {
+
+						let unstruckText = selectedText.replace("~~", '',).replace("~~", '',);
+						textEdit.replace(selection, unstruckText);
+					} else {
+
+						let struckText = `~~${selectedText}~~`;
+						textEdit.replace(selection, struckText);
+					}
+				});
+			}
+	});
+
+	context.subscriptions.push(changeCase, toggleStag, toggleTildeWrap);
 }
 
 // This method is called when your extension is deactivated

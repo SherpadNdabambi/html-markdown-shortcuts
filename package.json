@@ -2,7 +2,7 @@
   "name": "html-markdown-shortcuts",
   "displayName": "HTML & Markdown Shortcuts",
   "description": " Save time while writing HTML and Markdown with useful shortcuts.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.78.0"
   },

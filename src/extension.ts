@@ -32,14 +32,23 @@ export function activate(context: vscode.ExtensionContext) {
 			if (!originalText || originalText.toLocaleUpperCase() !== selectedText.toLocaleUpperCase())
 				originalText = selectedText;
 
-			if (isTitleCase(selectedText))
-				vscode.commands.executeCommand("editor.action.transformToUppercase");
+			if (selectedText === originalText)
+				if (isLowerCase(selectedText))
+					vscode.commands.executeCommand("editor.action.transformToTitlecase");
+				else
+					vscode.commands.executeCommand("editor.action.transformToLowercase");
 			else
-				if (isUpperCase(selectedText))
-					editor.edit((selectedText) => {
-						selectedText.replace(selection, originalText);
-					});
-				else vscode.commands.executeCommand("editor.action.transformToTitlecase");
+				if (isLowerCase(selectedText))
+					vscode.commands.executeCommand("editor.action.transformToTitlecase");
+				else
+					if (isTitleCase(selectedText))
+						vscode.commands.executeCommand("editor.action.transformToUppercase");
+					else
+						if (isUpperCase(selectedText))
+							editor.edit((selectedText) => {
+								selectedText.replace(selection, originalText);
+							});
+						else vscode.commands.executeCommand("editor.action.transformToLowercase");
 		}
 	});
 

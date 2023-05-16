@@ -2,7 +2,7 @@
   "name": "html-markdown-shortcuts",
   "displayName": "HTML & Markdown Shortcuts",
   "description": " Save time while writing HTML and Markdown with useful shortcuts.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -15,11 +15,31 @@
     "commands": [
       {
         "command": "html-markdown-shortcuts.changeCase",
-        "title": "Change Case"
+        "when": false
       },
       {
-        "command": "html-markdown-shortcuts.toggleStrikeThrough",
-        "title": "Toggle Strike Through"
+        "command": "html-markdown-shortcuts.toggleStag",
+        "when": false
+      },
+      {
+        "command": "html-markdown-shortcuts.toggleTildeWrap",
+        "when": false
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "html-markdown-shortcuts.changeCase",
+        "key": "capslock"
+      },
+      {
+        "command": "html-markdown-shortcuts.toggleStag",
+        "key": "shift+`",
+        "when": "editorLangId === 'html'"
+      },
+      {
+        "command": "html-markdown-shortcuts.toggleTildeWrap",
+        "key": "shift+`",
+        "when": "editorLangId === 'markdown'"
       }
     ]
   },

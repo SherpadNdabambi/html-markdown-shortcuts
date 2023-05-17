@@ -41,13 +41,13 @@ See the changelog [here](https://github.com/SherpadNdabambi/html-markdown-shortc
 
 ## Attributions
 
-[Logo](https://raw.githubusercontent.com/SherpadNdabambi/html-markdown-shortcuts/main/img/html-markdown-shortcuts-logo.png) edited from:
+1. [Logo](https://raw.githubusercontent.com/SherpadNdabambi/html-markdown-shortcuts/main/img/html-markdown-shortcuts-logo.png) edited from:
 
-1. [HTML5 badge](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg) by [W3C](https://www.w3.org/html/logo/index.html).
-1. [Markdown mark](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg) by Dustin Curtis from [GitHub](https://github.com/dcurtis/markdown-mark/tree/master/svg).
-1. [Keyboard Command](https://www.svgrepo.com/svg/513785/keyboard-command) from [SVG Repo](https://www.svgrepo.com/).
-1. [Keyboard Shift Uppercase](https://www.svgrepo.com/svg/309713/keyboard-shift-uppercase) from [SVG Repo](https://www.svgrepo.com/).
-1. [Ctrl A](https://www.svgrepo.com/svg/371190/ctrl-a) from [SVG Repo](https://www.svgrepo.com/).
-1. [Spacebar](https://www.svgrepo.com/svg/311219/spacebar) from [SVG Repo](https://www.svgrepo.com/).
+   1. [HTML5 badge](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg) by [W3C](https://www.w3.org/html/logo/index.html).
+   1. [Markdown mark](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg) by Dustin Curtis from [GitHub](https://github.com/dcurtis/markdown-mark/tree/master/svg).
+   1. [Keyboard Command](https://www.svgrepo.com/svg/513785/keyboard-command) from [SVG Repo](https://www.svgrepo.com/).
+   1. [Keyboard Shift Uppercase](https://www.svgrepo.com/svg/309713/keyboard-shift-uppercase) from [SVG Repo](https://www.svgrepo.com/).
+   1. [Ctrl A](https://www.svgrepo.com/svg/371190/ctrl-a) from [SVG Repo](https://www.svgrepo.com/).
+   1. [Spacebar](https://www.svgrepo.com/svg/311219/spacebar) from [SVG Repo](https://www.svgrepo.com/).
 
-Images have been compressed using [TinyPNG](https://tinypng.com/).
+1. Images have been compressed using [TinyPNG](https://tinypng.com/).

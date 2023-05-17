@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [2.0.1] (17 May 2023)
 
 1. Update changelog to follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
+1. Add logo.
 
 ## [2.0.0] (16 May 2023)
 

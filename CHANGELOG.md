@@ -6,19 +6,52 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [2.0.2] (17 May 2023)
+
+### Added
+
+1. Return Change Case command to command pallette.
+1. Return Toggle Strikethrough command to command pallette.
+
+### Deprecated
+
+1. Change Case command in command pallette.
+1. Toggle Strikethrough command in command pallette.
+
+### Fixed
+
+1. Update changelog format to include types of changes.
+
 ## [2.0.1] (17 May 2023)
 
+### Added
+
+1. Logo.
+
+### Fixed
+
 1. Update changelog to follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
-1. Add logo.
 
 ## [2.0.0] (16 May 2023)
 
+### Added
+
 1. Add keybindings. #12
+
+### Removed
+
+1. Remove Change Case command from command pallette.
+1. Remove Toggle Strikethrough command from command pallette.
 
 ## [1.0.1] (15 May 2023)
 
-1. Fixed Case Change bug. #11
+### Fixed
+
+1. Fix Case Change bug. #11
 
 ## [1.0.0] (15 May 2023)
 
-1. Initial release.
+### Added
+
+1. Change Case command.
+1. Toggle Strikethrough command.

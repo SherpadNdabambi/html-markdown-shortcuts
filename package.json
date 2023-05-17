@@ -3,7 +3,7 @@
   "displayName": "HTML & Markdown Shortcuts",
   "description": " Save time while writing HTML and Markdown with useful shortcuts.",
   "icon": "img/html-markdown-shortcuts-logo.png",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "categories": [
     "Formatters",
     "Keymaps",
@@ -18,14 +18,21 @@
     "commands": [
       {
         "command": "html-markdown-shortcuts.changeCase",
-        "when": false
+        "title": "Change Case",
+        "when": true
       },
       {
         "command": "html-markdown-shortcuts.toggleStag",
+        "title": "Toggle s tag",
         "when": false
       },
       {
+        "command": "html-markdown-shortcuts.toggleStrikethrough",
+        "title": "Toggle Strikethrough"
+      },
+      {
         "command": "html-markdown-shortcuts.toggleTildeWrap",
+        "title": "Toggle tilde wrap",
         "when": false
       }
     ],

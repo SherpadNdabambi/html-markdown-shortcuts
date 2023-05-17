@@ -81,6 +81,35 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 	});
 
+	let toggleStrikethrough = vscode.commands.registerCommand("html-markdown-shortcuts.toggleStrikethrough", () => {
+
+		// declare local constants
+		const editor = vscode.window.activeTextEditor,
+			selection = editor?.selection;
+
+			if (selection && !selection.isEmpty) {
+
+				const selectionRange = new vscode.Range(selection.start.line, selection.start.character, selection.end.line, selection.end.character),
+					selectedText = editor.document.getText(selectionRange);
+
+				editor.edit((textEdit) => {
+
+					// declare local constants
+					const editor = vscode.window.activeTextEditor;
+
+					if (selectedText.slice(0, 3) === "<s>") {
+
+						let unstruckText = selectedText.replace(/<\/*s>/, '',).replace(/<\/*s>/, '',);
+						textEdit.replace(selection, unstruckText);
+					} else {
+
+						let struckText = `<s>${selectedText}</s>`;
+						textEdit.replace(selection, struckText);
+					}
+				});
+			}
+	});
+
 	let toggleTildeWrap = vscode.commands.registerCommand("html-markdown-shortcuts.toggleTildeWrap", () => {
 
 		// declare local constants
@@ -110,7 +139,7 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 	});
 
-	context.subscriptions.push(changeCase, toggleStag, toggleTildeWrap);
+	context.subscriptions.push(changeCase, toggleStag, toggleStrikethrough, toggleTildeWrap);
 }
 
 // This method is called when your extension is deactivated

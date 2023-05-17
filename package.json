@@ -2,15 +2,18 @@
   "name": "html-markdown-shortcuts",
   "displayName": "HTML & Markdown Shortcuts",
   "description": " Save time while writing HTML and Markdown with useful shortcuts.",
-  "version": "2.0.0",
-  "engines": {
-    "vscode": "^1.78.0"
-  },
+  "icon": "./img/html-markdown-shortcuts-logo.png",
+  "version": "2.0.1",
   "categories": [
-    "Other"
+    "Formatters",
+    "Keymaps",
+    "Programming Languages"
   ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
+  "publisher": "SherpadNdabambi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SherpadNdabambi/html-markdown-shortcuts.git"
+  },
   "contributes": {
     "commands": [
       {
@@ -43,6 +46,11 @@
       }
     ]
   },
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "activationEvents": [],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",

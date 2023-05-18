@@ -23,7 +23,7 @@ A VS Code extension with useful shortcuts.
 
 ### Change Case
 
-Changes casing of selected text.
+Pressing Caps Lock changes the casing of selected text.
 
 ![Change Case](./img/change-case.gif)
 

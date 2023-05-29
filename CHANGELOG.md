@@ -1,10 +1,16 @@
-# Change Log
+# Changelog
 
 All notable changes to the HTML & Markdown Shortcuts extension will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to (or tries to ;P) [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.0.4] ( 2023)
+
+### Changed
+
+1. Update README.
 
 ## [2.0.3] (18 May 2023)
 
@@ -21,8 +27,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Deprecated
 
-1. Change Case command in command pallette.
-1. Toggle Strikethrough command in command pallette.
+1. Change Case command will be removed from command pallette.
+1. Toggle Strikethrough command will be removed from command pallette.
 
 ### Fixed
 
@@ -61,3 +67,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 1. Change Case command.
 1. Toggle Strikethrough command.
+
+<!-- References -->
+
+[reference style links url]: https://www.markdownguide.org/basic-syntax/#reference-style-links

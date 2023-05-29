@@ -83,7 +83,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 [Keep a Changelog url]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning url]: https://semver.org/spec/v2.0.0.html
-[2.0.4]: https://marketplace.visualstudio.com/items?itemName=SherpadNdabambi.html-markdown-shortcuts
+[3.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.0
 [#19]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/19
 [reference style links url]: https://www.markdownguide.org/basic-syntax/#reference-style-links
 [Best-README-Template url]: https://github.com/othneildrew/Best-README-Template

@@ -7,7 +7,7 @@
 
 [![Contributors shield][Contributors shield url]][Contributors url]
 [![Issues shield][Issues shield url]][Issues url]
-[![MIT License shield][MIT License shield url]][License url]
+[![DBAD License shield][DBAD License shield url]][License url]
 
 </div>
 
@@ -150,7 +150,7 @@ Sherpad Ndabambi
 
 ## License
 
-Distributed under the MIT License. See [LICENSE][License url] for more information.
+Distributed under the DBAD License. See [LICENSE][License url] for more information.
 
 <div align=right>
 
@@ -186,7 +186,7 @@ Distributed under the MIT License. See [LICENSE][License url] for more informati
 [Contributors url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/graphs/contributors
 [Issues shield url]: https://img.shields.io/github/issues/sherpadNdabambi/html-markdown-shortcuts.svg?style=flat
 [Issues url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/issues
-[MIT License shield url]: https://img.shields.io/github/license/sherpadNdabambi/html-markdown-shortcuts.svg?style=flat
+[DBAD License shield url]: https://img.shields.io/badge/license-DBAD-blue
 [License url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/blob/main/LICENSE
 [Logo url]: ./img/html-markdown-shortcuts-logo.png
 [Repo url]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/

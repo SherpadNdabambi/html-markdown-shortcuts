@@ -139,8 +139,8 @@ See the changelog [here][changelog url].
 
 Sherpad Ndabambi
 
-<span title="Personal website">[<img alt="Website icon" src="./img/website-ui-web-svgrepo-com.svg" style="height: 32px">][Personal website url]</span>
-<span title="Email">[<img alt="Gmail icon" src="./img/gmail-old-svgrepo-com.svg" style="height: 32px">][Email address]<span>
+<span title="Personal website">[<img alt="Website icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/website-ui-web-svgrepo-com.svg" style="height: 32px">][Personal website url]</span>
+<span title="Email">[<img alt="Gmail icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/gmail-old-svgrepo-com.svg" style="height: 32px">][Email address]<span>
 
 <div align=right>
 
@@ -188,12 +188,12 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
 [Issues url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/issues
 [DBAD License shield url]: https://img.shields.io/badge/license-DBAD-blue
 [License url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/blob/main/LICENSE
-[Logo url]: ./img/html-markdown-shortcuts-logo.png
+[Logo url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/html-markdown-shortcuts-logo.png
 [Repo url]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/
 [Best-README-Template url]: https://github.com/othneildrew/Best-README-Template
-[Change Case animation]: ./img/change-case.gif
-[Toggle Strikethrough in HTML animation]: ./img/toggle-strikethrough-html.gif
-[Toggle Strikethrough in Markdown animation]: ./img/toggle-strikethrough-markdown.gif
+[Change Case animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/change-case.gif
+[Toggle Strikethrough in HTML animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toggle-strikethrough-html.gif
+[Toggle Strikethrough in Markdown animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toggle-strikethrough-markdown.gif
 [#1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/1
 [#2]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/2
 [#11]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/11

@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
 
 1. Update README.
+1. Replace MIT license with DBAD license.
 
 ## [2.0.3] (18 May 2023)
 

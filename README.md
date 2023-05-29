@@ -139,8 +139,8 @@ See the changelog [here][changelog url].
 
 Sherpad Ndabambi
 
-<span title="Personal website">[<img alt="Website icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/website-ui-web-svgrepo-com.svg" style="height: 32px">][Personal website url]</span>
-<span title="Email">[<img alt="Gmail icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/gmail-old-svgrepo-com.svg" style="height: 32px">][Email address]<span>
+<span title="Personal website">[<img alt="Website icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/website-icon.png" style="height: 32px">][Personal website url]</span>
+<span title="Email">[<img alt="Gmail icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/gmail-icon.png" style="height: 32px">][Email address]<span>
 
 <div align=right>
 

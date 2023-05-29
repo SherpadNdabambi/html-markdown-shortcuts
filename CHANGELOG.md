@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 ## [Unreleased]
 
-## [2.0.4] (29 May 2023)
+## [3.0.0] (29 May 2023)
 
 ### Fixed
 
@@ -17,6 +17,11 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 1. Change links in changelog to [reference style links][reference style links url] for better readability.
 1. Update README to follow the [Best-README-Template][Best-README-Template url] template.
 1. Replace MIT license with DBAD license.
+
+### Removed
+
+1. Remove Change Case command from command pallette.
+1. Remove Toggle Strikethrough command from command pallette.
 
 ## [2.0.3] (18 May 2023)
 

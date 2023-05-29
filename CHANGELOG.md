@@ -53,7 +53,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 ### Fixed
 
-1. Update changelog to follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format.
+1. Update changelog to follow [Keep a Changelog][Keep a Changelog url] format.
 
 ## [2.0.0] (16 May 2023)
 

@@ -45,7 +45,7 @@ export function activate(context: vscode.ExtensionContext) {
 						vscode.commands.executeCommand("editor.action.transformToUppercase");
 					else
 						if (isUpperCase(selectedText))
-							editor.edit((selectedText) => {
+							editor.edit(selectedText => {
 								selectedText.replace(selection, originalText);
 							});
 						else vscode.commands.executeCommand("editor.action.transformToLowercase");
@@ -63,7 +63,7 @@ export function activate(context: vscode.ExtensionContext) {
 				const selectionRange = new vscode.Range(selection.start.line, selection.start.character, selection.end.line, selection.end.character),
 					selectedText = editor.document.getText(selectionRange);
 
-				editor.edit((textEdit) => {
+				editor.edit(textEdit => {
 
 					// declare local constants
 					const editor = vscode.window.activeTextEditor;
@@ -78,7 +78,7 @@ export function activate(context: vscode.ExtensionContext) {
 						textEdit.replace(selection, struckText);
 					}
 				});
-			}
+			} else editor.edit(textEdit => textEdit.replace(selection, '~'));
 	});
 
 	let toggleStrikethrough = vscode.commands.registerCommand("html-markdown-shortcuts.toggleStrikethrough", () => {
@@ -92,10 +92,7 @@ export function activate(context: vscode.ExtensionContext) {
 				const selectionRange = new vscode.Range(selection.start.line, selection.start.character, selection.end.line, selection.end.character),
 					selectedText = editor.document.getText(selectionRange);
 
-				editor.edit((textEdit) => {
-
-					// declare local constants
-					const editor = vscode.window.activeTextEditor;
+				editor.edit(textEdit => {
 
 					if (selectedText.slice(0, 3) === "<s>") {
 
@@ -121,10 +118,7 @@ export function activate(context: vscode.ExtensionContext) {
 				const selectionRange = new vscode.Range(selection.start.line, selection.start.character, selection.end.line, selection.end.character),
 					selectedText = editor.document.getText(selectionRange);
 
-				editor.edit((textEdit) => {
-
-					// declare local constants
-					const editor = vscode.window.activeTextEditor;
+				editor.edit(textEdit => {
 
 					if (selectedText.slice(0, 2) === "~~") {
 
@@ -136,7 +130,7 @@ export function activate(context: vscode.ExtensionContext) {
 						textEdit.replace(selection, struckText);
 					}
 				});
-			}
+			} else editor.edit(textEdit => textEdit.replace(selection, '~'));
 	});
 
 	context.subscriptions.push(changeCase, toggleStag, toggleStrikethrough, toggleTildeWrap);
@@ -155,7 +149,7 @@ function isLowerCase (text: string) {
 	// declare local variables
 	let result = true;
 
-	text.split('').forEach((letter) => {
+	text.split('').forEach(letter => {
 
 		if (typeof(letter) === "string")
 			if (letter !== letter.toLowerCase()) result = false;
@@ -174,7 +168,7 @@ function isTitleCase (sentence: string) {
 	let result = true;
 
 	if (isUpperCase(sentence)) result = false;
-	sentence.split(' ').forEach((word) => {
+	sentence.split(' ').forEach(word => {
 		
 		if (typeof(word[0]) === "string")
 			if (word[0] !== word[0].toUpperCase()) result = false;
@@ -192,7 +186,7 @@ function isUpperCase (text: string) {
 	// declare local variables
 	let result = true;
 
-	text.split('').forEach((letter) => {
+	text.split('').forEach(letter => {
 
 		if (typeof(letter) === "string")
 			if (letter !== letter.toUpperCase()) result = false;

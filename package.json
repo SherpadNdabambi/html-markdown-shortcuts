@@ -18,22 +18,15 @@
     "commands": [
       {
         "command": "html-markdown-shortcuts.changeCase",
-        "title": "Change Case",
-        "when": true
+        "title": "Change Case"
       },
       {
         "command": "html-markdown-shortcuts.toggleStag",
-        "title": "Toggle s tag",
-        "when": false
-      },
-      {
-        "command": "html-markdown-shortcuts.toggleStrikethrough",
-        "title": "Toggle Strikethrough"
+        "title": "Toggle s tag"
       },
       {
         "command": "html-markdown-shortcuts.toggleTildeWrap",
-        "title": "Toggle tilde wrap",
-        "when": false
+        "title": "Toggle tilde wrap"
       }
     ],
     "keybindings": [
@@ -44,14 +37,30 @@
       {
         "command": "html-markdown-shortcuts.toggleStag",
         "key": "shift+`",
-        "when": "editorLangId === 'html'"
+        "when": "editorLangId === 'html' && editorHasSelection"
       },
       {
         "command": "html-markdown-shortcuts.toggleTildeWrap",
         "key": "shift+`",
-        "when": "editorLangId === 'markdown'"
+        "when": "editorLangId === 'markdown' && editorHasSelection"
       }
-    ]
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "html-markdown-shortcuts.changeCase",
+          "when": "false"
+        },
+        {
+          "command": "html-markdown-shortcuts.toggleStag",
+          "when": "false"
+        },
+        {
+          "command": "html-markdown-shortcuts.toggleTildeWrap",
+          "when": "false"
+        }
+      ]
+    }
   },
   "main": "./out/extension.js",
   "engines": {

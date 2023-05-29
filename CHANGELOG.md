@@ -2,15 +2,20 @@
 
 All notable changes to the HTML & Markdown Shortcuts extension will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to (or tries to ;P) [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog][Keep a Changelog url], and this project adheres to (or tries to ;P) [Semantic Versioning][Semantic Versioning url].
 
 ## [Unreleased]
 
-## [2.0.4] ( 2023)
+## [2.0.4] (29 May 2023)
+
+### Fixed
+
+1. Fixed tilde bug [#19]
 
 ### Changed
 
-1. Update README.
+1. Change links in changelog to [reference style links][reference style links url] for better readability.
+1. Update README to follow the [Best-README-Template][Best-README-Template url] template.
 1. Replace MIT license with DBAD license.
 
 ## [2.0.3] (18 May 2023)
@@ -71,4 +76,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 <!-- References -->
 
+[Keep a Changelog url]: https://keepachangelog.com/en/1.0.0/
+[Semantic Versioning url]: https://semver.org/spec/v2.0.0.html
+[2.0.4]: https://marketplace.visualstudio.com/items?itemName=SherpadNdabambi.html-markdown-shortcuts
+[#19]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/19
 [reference style links url]: https://www.markdownguide.org/basic-syntax/#reference-style-links
+[Best-README-Template url]: https://github.com/othneildrew/Best-README-Template

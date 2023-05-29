@@ -186,7 +186,7 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
 [Contributors url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/graphs/contributors
 [Issues shield url]: https://img.shields.io/github/issues/sherpadNdabambi/html-markdown-shortcuts.svg?style=flat
 [Issues url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/issues
-[DBAD License shield url]: https://img.shields.io/badge/license-DBAD-blue
+[DBAD License shield url]: https://img.shields.io/badge/license-DBAD-blue?style=flat
 [License url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/blob/main/LICENSE
 [Logo url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/html-markdown-shortcuts-logo.png
 [Repo url]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/

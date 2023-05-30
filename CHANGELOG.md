@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 ## [Unreleased]
 
+## [3.0.1] (30 May 2023)
+
+### Fixed
+
+1. Add missing links in README.
+
 ## [3.0.0] (29 May 2023)
 
 ### Fixed
@@ -83,6 +89,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 [Keep a Changelog url]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning url]: https://semver.org/spec/v2.0.0.html
+[3.0.1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.1
 [3.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.0
 [#19]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/19
 [reference style links url]: https://www.markdownguide.org/basic-syntax/#reference-style-links

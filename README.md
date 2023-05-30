@@ -169,8 +169,8 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
    1. [Ctrl A][Ctrl A url] from [SVG Repo][SVG Repo url].
    1. [Spacebar][Spacebar url] from [SVG Repo][SVG Repo url].
 
-1. [Website icon][Website icon url] edited from [Original website icon][Original website icon url] by
-1. [Gmail icon][Gmail icon source url] by
+1. [Website icon][Website icon url] edited from [SVG website icon][SVG website icon url] from [SVG Repo][SVG Repo url].
+1. [Gmail icon][Gmail icon url] edited from [Gmail SVG vector][Gmail SVG vector url] from [SVG Repo][SVG Repo url].
 1. Images in this project have been compressed using [TinyPNG][TinyPNG url].
 1. Parts of this README are based on the [Best-README-Template][Best-README-Template url] template.
 
@@ -210,6 +210,11 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
 [SVG Repo url]: https://www.svgrepo.com/
 [Ctrl A url]: https://www.svgrepo.com/svg/371190/ctrl-a
 [Spacebar url]: https://www.svgrepo.com/svg/311219/spacebar
+[Website icon url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/website-icon.png
+[SVG website icon url]: https://www.svgrepo.com/svg/415803/website-ui-web
+[Gmail icon url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/gmail-icon.png
+[Gmail SVG vector url]: https://www.svgrepo.com/svg/349379/gmail-old
+[TinyPNG url]: https://tinypng.com/
 [Typescript shield]: https://img.shields.io/npm/types/typescript?style=flat
 [Typescript url]: https://www.typescriptlang.org/
 [Personal website url]: http://sherpadndabambi.github.io/

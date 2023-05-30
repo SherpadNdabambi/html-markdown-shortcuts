@@ -215,7 +215,7 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
 [Gmail icon url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/gmail-icon.png
 [Gmail SVG vector url]: https://www.svgrepo.com/svg/349379/gmail-old
 [TinyPNG url]: https://tinypng.com/
-[Typescript shield]: https://img.shields.io/npm/types/typescript?style=flat
+[Typescript shield]: https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white
 [Typescript url]: https://www.typescriptlang.org/
 [Personal website url]: http://sherpadndabambi.github.io/
 [Email address]: mailto:sgndabambi@gmail.com

@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 ## [Unreleased]
 
+### Changed
+
+1. Change TypeScript logo in README.
+
 ## [3.0.1] (30 May 2023)
 
 ### Fixed

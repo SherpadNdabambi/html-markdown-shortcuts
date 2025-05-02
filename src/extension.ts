@@ -5,6 +5,7 @@ let originalText: string;
 // Import the module and reference it with the alias vscode in your code below
 import { escape } from "querystring";
 import * as vscode from "vscode";
+import MarkdownIt from "markdown-it";
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -122,7 +123,99 @@ export function activate(context: vscode.ExtensionContext) {
     }
   );
 
-  context.subscriptions.push(changeCase, toggleStag, toggleTildeWrap);
+  let generateToc = vscode.commands.registerCommand(
+    "html-markdown-shortcuts.generateToc",
+    () => {
+      const editor = vscode.window.activeTextEditor;
+      if (!editor) {
+        vscode.window.showErrorMessage("No active editor!");
+        return;
+      }
+
+      const doc = editor.document;
+      if (doc.languageId !== "markdown") {
+        vscode.window.showWarningMessage(
+          "Only Markdown files are supported for now!"
+        );
+        return;
+      }
+
+      const text = doc.getText();
+      const md = new MarkdownIt();
+      const tokens = md.parse(text, {});
+
+      // Extract headings (h2 and below, skip "Table of Contents")
+      const headings = tokens
+        .map((t, i) => ({ t, originalIndex: i }))
+        .filter(
+          ({ t }) =>
+            t.type === "heading_open" && parseInt(t.tag.replace("h", "")) >= 2
+        )
+        .map(({ t, originalIndex }) => ({
+          level: parseInt(t.tag.replace("h", "")),
+          text: tokens[originalIndex + 1].content,
+        }))
+        .filter((h) => h.text !== "Table of Contents");
+
+      if (headings.length === 0) {
+        vscode.window.showInformationMessage(
+          "No valid headings found to generate TOC."
+        );
+        return;
+      }
+
+      // Generate numbered TOC
+      let toc = "<details>\n\n   <summary>Contents</summary>\n\n";
+      headings.forEach((h, i) => {
+        const slug = h.text
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/[^a-z0-9-]/g, "");
+        const indent = "   ".repeat(h.level - 2);
+        toc += `${indent}1. [${h.text}](#${slug})\n`;
+      });
+      toc += "\n</details>";
+
+      // Insert or update TOC
+      editor.edit((editBuilder) => {
+        const tocRegex = /## Table of Contents\n+<details>[\s\S]*?<\/details>*/;
+        const tocSection = `## Table of Contents\n\n${toc}`;
+
+        if (tocRegex.test(text)) {
+          // Replace existing TOC
+          const match = text.match(tocRegex)!;
+          const range = new vscode.Range(
+            doc.positionAt(match.index!),
+            doc.positionAt(match.index! + match[0].length)
+          );
+          editBuilder.replace(range, tocSection);
+        } else {
+          // Insert after first heading or at top
+          const firstHeading = text.match(/^# .*\n/m);
+          const insertPos = firstHeading
+            ? doc.positionAt(firstHeading.index! + firstHeading[0].length)
+            : new vscode.Position(0, 0);
+          editBuilder.insert(insertPos, `\n${tocSection}\n`);
+        }
+      });
+    }
+  );
+
+  // Auto-update TOC on save for Markdown files
+  context.subscriptions.push(
+    vscode.workspace.onWillSaveTextDocument((event) => {
+      if (event.document.languageId === "markdown") {
+        vscode.commands.executeCommand("html-markdown-shortcuts.generateToc"); // Reuse the existing generateToc logic
+      }
+    })
+  );
+
+  context.subscriptions.push(
+    changeCase,
+    toggleStag,
+    toggleTildeWrap,
+    generateToc
+  );
 }
 
 // This method is called when your extension is deactivated

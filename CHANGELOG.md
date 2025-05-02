@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 ## [Unreleased]
 
+### Planned
+
+1. Add/update/remove section numbering.
+1. Add Generate Table of Contents feature for HTML files.
+
+## [4.0.0] (2 May 2025)
+
+### Added
+
+1. Generate Table of Contents feature for Markdown files (manual via `Ctrl+T C`).
+1. Auto-update Table of Contents on save for Markdown files.
+
 ### Changed
 
 1. Change TypeScript logo in README.
@@ -93,6 +105,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 [Keep a Changelog url]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning url]: https://semver.org/spec/v2.0.0.html
+[4.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.0.0
 [3.0.1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.1
 [3.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.0
 [#19]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/19

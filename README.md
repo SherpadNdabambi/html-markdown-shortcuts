@@ -33,6 +33,7 @@
    1. [Built With](#built-with)
 1. [Installation](#installation)
 1. [Features](#features)
+   1. [Generate Table of Contents](#generate-table-of-contents)
    1. [Change Case](#change-case)
    1. [Toggle Strikethrough](#toggle-strikethrough)
 1. [Roadmap](#roadmap)
@@ -70,11 +71,23 @@ Search for and install 'HTML & Markdown Shortcuts' on Visual Studio Marketplace.
 
 ## Features
 
+### Generate Table of Contents
+
+![TOC animation][TOC animation url]
+
+#### How to Use
+
+1. **Run the command:** Run the "Generate Table of Contents" command in the [Command Palette][Command Palette url] (`Ctrl+Shift+P`).
+1. **Save:** Saving a file also automatically updates the table of contents.
+1. **Keybindings:**
+   - **Windows/Linux:** `Ctrl + T`, `C`
+   - **Mac:** `Cmd + T`, `C`
+
 ### Change Case
 
 Pressing Caps Lock changes the casing of selected text.
 
-![Change Case][Change Case animation]
+![Change Case animation][Change Case animation url]
 
 ### Toggle Strikethrough
 
@@ -98,6 +111,10 @@ Typing a tilde strikes through selected text.
 - [x] Add keybindings [#9]
 - [x] Publish the extension to Marketplace [#5]
 - [x] Fix tilde bug [#19]
+- [x] Change license to DBAD [#22]
+- [x] Add Generate Table of Contents feature for Markdown files [#23]
+- [ ] Add/update/remove section numbering.
+- [ ] Add Generate Table of Contents feature for HTML files.
 
 <div align=right>
 
@@ -191,7 +208,9 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
 [Logo url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/html-markdown-shortcuts-logo.png
 [Repo url]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/
 [Best-README-Template url]: https://github.com/othneildrew/Best-README-Template
-[Change Case animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/change-case.gif
+[Command Palette url]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette
+[TOC animation url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toc-animation-frames-tinified.gif
+[Change Case animation url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/change-case.gif
 [Toggle Strikethrough in HTML animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toggle-strikethrough-html.gif
 [Toggle Strikethrough in Markdown animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toggle-strikethrough-markdown.gif
 [#1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/1

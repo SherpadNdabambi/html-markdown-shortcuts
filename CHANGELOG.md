@@ -11,6 +11,15 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 1. Add/update/remove section numbering.
 1. Add Generate Table of Contents feature for HTML files.
 
+## [4.2.0] (2 May 2025)
+
+### Added
+
+1. User settings. Users can now:
+   1. Enable/disable auto-update of Table of Contents on save for Markdown files.
+   1. Choose languages where the Change Case keybinding is active.
+   1. Specify file patterns to exclude from TOC auto-update.
+
 ## [4.1.0] (2 May 2025)
 
 ### Changed
@@ -111,6 +120,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 [Keep a Changelog url]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning url]: https://semver.org/spec/v2.0.0.html
+[4.2.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.2.0
 [4.1.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.1.0
 [4.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.0.0
 [3.0.1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.1

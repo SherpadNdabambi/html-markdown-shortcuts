@@ -34,6 +34,7 @@
 1. [Installation](#installation)
 1. [Features](#features)
    1. [Generate Table of Contents](#generate-table-of-contents)
+      1. [How to Use](#how-to-use)
    1. [Change Case](#change-case)
    1. [Toggle Strikethrough](#toggle-strikethrough)
 1. [Roadmap](#roadmap)
@@ -114,8 +115,9 @@ Typing a tilde strikes through selected text.
 - [x] Change license to DBAD [#23]
 - [x] Add Generate Table of Contents feature for Markdown files [#37]
 - [x] Restrict Change Case command to only work on HTML and Markdown files [#39]
+- [x] Add user settings [#38]
 - [ ] Implement Add/update/remove section numbering [#40]
-- [ ] Implement Generate Table of Contents feature for HTML files [#38]
+- [ ] Implement Generate Table of Contents feature for HTML files.
 
 <div align=right>
 

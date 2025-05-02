@@ -203,8 +203,8 @@ export function activate(context: vscode.ExtensionContext) {
 
   // Auto-update TOC on save for Markdown files
   context.subscriptions.push(
-    vscode.workspace.onDidSaveTextDocument((document) => {
-      if (document.languageId === "markdown") {
+    vscode.workspace.onWillSaveTextDocument((event) => {
+      if (event.document.languageId === "markdown") {
         vscode.commands.executeCommand("html-markdown-shortcuts.generateToc"); // Reuse the existing generateToc logic
       }
     })

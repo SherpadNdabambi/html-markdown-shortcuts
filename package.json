@@ -24,11 +24,41 @@
         "title": "Toggle tilde wrap"
       }
     ],
+    "configuration": {
+      "properties": {
+        "html-markdown-shortcuts.autoUpdateToc": {
+          "default": true,
+          "description": "Automatically update the Table of Contents when saving Markdown files.",
+          "type": "boolean"
+        },
+        "html-markdown-shortcuts.changeCaseLanguages": {
+          "default": [
+            "html",
+            "markdown"
+          ],
+          "description": "Languages where the Change Case keybinding is active (e.g., ['markdown', 'html', 'javascript']).",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "html-markdown-shortcuts.tocExcludePatterns": {
+          "default": [
+            "CHANGELOG.md"
+          ],
+          "description": "File patterns to exclude from TOC auto-update (e.g., ['CHANGELOG.md', '*.log']). Uses glob patterns.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "title": "HTML & Markdown Shortcuts"
+    },
     "keybindings": [
       {
         "command": "html-markdown-shortcuts.changeCase",
-        "key": "capslock",
-        "when": "editorLangId == markdown || editorLangId == html"
+        "key": "capslock"
       },
       {
         "command": "html-markdown-shortcuts.generateToc",
@@ -68,7 +98,8 @@
     }
   },
   "dependencies": {
-    "markdown-it": "^14.1.0"
+    "markdown-it": "^14.1.0",
+    "minimatch": "^10.0.1"
   },
   "description": " Save time while writing HTML and Markdown with useful shortcuts.",
   "devDependencies": {
@@ -105,5 +136,5 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
-  "version": "4.1.0"
+  "version": "4.2.0"
 }

@@ -3,7 +3,7 @@
   "displayName": "HTML & Markdown Shortcuts",
   "description": " Save time while writing HTML and Markdown with useful shortcuts.",
   "icon": "img/html-markdown-shortcuts-logo.png",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "categories": [
     "Formatters",
     "Keymaps",
@@ -21,6 +21,10 @@
         "title": "Change Case"
       },
       {
+        "command": "html-markdown-shortcuts.generateToc",
+        "title": "Generate Table of Contents"
+      },
+      {
         "command": "html-markdown-shortcuts.toggleStag",
         "title": "Toggle s tag"
       },
@@ -33,6 +37,11 @@
       {
         "command": "html-markdown-shortcuts.changeCase",
         "key": "capslock"
+      },
+      {
+        "command": "html-markdown-shortcuts.generateToc",
+        "key": "ctrl+t c",
+        "when": "editorTextFocus"
       },
       {
         "command": "html-markdown-shortcuts.toggleStag",
@@ -58,6 +67,10 @@
         {
           "command": "html-markdown-shortcuts.toggleTildeWrap",
           "when": "false"
+        },
+        {
+          "command": "html-markdown-shortcuts.generateToc",
+          "when": "editorLangId === 'markdown'"
         }
       ]
     }
@@ -75,17 +88,21 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  },
   "devDependencies": {
-    "@types/vscode": "^1.78.0",
     "@types/glob": "^8.1.0",
+    "@types/markdown-it": "^14.1.2",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
+    "@types/vscode": "^1.78.0",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "@typescript-eslint/parser": "^5.59.1",
+    "@vscode/test-electron": "^2.3.0",
     "eslint": "^8.39.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
-    "typescript": "^5.0.4",
-    "@vscode/test-electron": "^2.3.0"
+    "typescript": "^5.0.4"
   }
 }

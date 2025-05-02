@@ -11,6 +11,12 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 1. Add/update/remove section numbering.
 1. Add Generate Table of Contents feature for HTML files.
 
+## [4.1.0] (2 May 2025)
+
+### Changed
+
+1. Restricted Change Case command to only work on HTML and Markdown files.
+
 ## [4.0.0] (2 May 2025)
 
 ### Added
@@ -105,6 +111,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 [Keep a Changelog url]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning url]: https://semver.org/spec/v2.0.0.html
+[4.1.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.1.0
 [4.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.0.0
 [3.0.1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.1
 [3.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.0

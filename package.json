@@ -27,7 +27,8 @@
     "keybindings": [
       {
         "command": "html-markdown-shortcuts.changeCase",
-        "key": "capslock"
+        "key": "capslock",
+        "when": "editorLangId == markdown || editorLangId == html"
       },
       {
         "command": "html-markdown-shortcuts.generateToc",
@@ -104,5 +105,5 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
-  "version": "4.0.0"
+  "version": "4.1.0"
 }

@@ -111,10 +111,11 @@ Typing a tilde strikes through selected text.
 - [x] Add keybindings [#9]
 - [x] Publish the extension to Marketplace [#5]
 - [x] Fix tilde bug [#19]
-- [x] Change license to DBAD [#22]
-- [x] Add Generate Table of Contents feature for Markdown files [#23]
-- [ ] Add/update/remove section numbering.
-- [ ] Add Generate Table of Contents feature for HTML files.
+- [x] Change license to DBAD [#23]
+- [x] Add Generate Table of Contents feature for Markdown files [#37]
+- [x] Restrict Change Case command to only work on HTML and Markdown files [#39]
+- [ ] Implement Add/update/remove section numbering [#40]
+- [ ] Implement Generate Table of Contents feature for HTML files [#38]
 
 <div align=right>
 

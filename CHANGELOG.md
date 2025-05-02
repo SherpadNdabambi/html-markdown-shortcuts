@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 1. Add/update/remove section numbering.
 1. Add Generate Table of Contents feature for HTML files.
 
-## [4.2.0] (2 May 2025)
+## [4.2.0] (3 May 2025)
 
 ### Added
 

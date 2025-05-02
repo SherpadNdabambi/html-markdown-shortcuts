@@ -11,6 +11,12 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 1. Add/update/remove section numbering.
 1. Add Generate Table of Contents feature for HTML files.
 
+## [4.2.1] (3 May 2025)
+
+### Changed
+
+1. Changed repo name from `html-markdown-shortcuts` to `vsc-html-markdown-shortcuts`.
+
 ## [4.2.0] (3 May 2025)
 
 ### Added
@@ -120,11 +126,12 @@ The format is based on [Keep a Changelog][Keep a Changelog url], and this projec
 
 [Keep a Changelog url]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning url]: https://semver.org/spec/v2.0.0.html
-[4.2.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.2.0
-[4.1.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.1.0
-[4.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v4.0.0
-[3.0.1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.1
-[3.0.0]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/releases/tag/v3.0.0
-[#19]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/19
+[4.2.1]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/releases/tag/v4.2.1
+[4.2.0]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/releases/tag/v4.2.0
+[4.1.0]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/releases/tag/v4.1.0
+[4.0.0]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/releases/tag/v4.0.0
+[3.0.1]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/releases/tag/v3.0.1
+[3.0.0]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/releases/tag/v3.0.0
+[#19]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues/19
 [reference style links url]: https://www.markdownguide.org/basic-syntax/#reference-style-links
 [Best-README-Template url]: https://github.com/othneildrew/Best-README-Template

@@ -159,8 +159,8 @@ See the changelog [here][changelog url].
 
 Sherpad Ndabambi
 
-<span title="Personal website">[<img alt="Website icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/website-icon.png" style="height: 32px">][Personal website url]</span>
-<span title="Email">[<img alt="Gmail icon" src="https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/gmail-icon.png" style="height: 32px">][Email address]<span>
+<span title="Personal website">[<img alt="Website icon" src="https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/website-icon.png" style="height: 32px">][Personal website url]</span>
+<span title="Email">[<img alt="Gmail icon" src="https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/gmail-icon.png" style="height: 32px">][Email address]<span>
 
 <div align=right>
 
@@ -202,27 +202,27 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
 
 <!-- References -->
 
-[Contributors shield url]: https://img.shields.io/github/contributors/sherpadNdabambi/html-markdown-shortcuts.svg?style=flat
-[Contributors url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/graphs/contributors
-[Issues shield url]: https://img.shields.io/github/issues/sherpadNdabambi/html-markdown-shortcuts.svg?style=flat
-[Issues url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/issues
+[Contributors shield url]: https://img.shields.io/github/contributors/SherpadNdabambi/vsc-html-markdown-shortcuts.svg?style=flat
+[Contributors url]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/graphs/contributors
+[Issues shield url]: https://img.shields.io/github/issues/SherpadNdabambi/vsc-html-markdown-shortcuts.svg?style=flat
+[Issues url]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues
 [DBAD License shield url]: https://img.shields.io/badge/license-DBAD-blue?style=flat
-[License url]: https://github.com/sherpadNdabambi/html-markdown-shortcuts/blob/main/LICENSE
-[Logo url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/html-markdown-shortcuts-logo.png
-[Repo url]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/
+[License url]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/blob/main/LICENSE
+[Logo url]: https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/html-markdown-shortcuts-logo.png
+[Repo url]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/
 [Best-README-Template url]: https://github.com/othneildrew/Best-README-Template
 [Command Palette url]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette
-[TOC animation url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toc-animation-frames-tinified.gif
-[Change Case animation url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/change-case.gif
-[Toggle Strikethrough in HTML animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toggle-strikethrough-html.gif
-[Toggle Strikethrough in Markdown animation]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/toggle-strikethrough-markdown.gif
-[#1]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/1
-[#2]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/2
-[#11]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/11
-[#9]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/9
-[#5]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/5
-[#19]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/issues/19
-[changelog url]: https://github.com/SherpadNdabambi/html-markdown-shortcuts/blob/main/CHANGELOG.md
+[TOC animation url]: https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/toc-animation-frames-tinified.gif
+[Change Case animation url]: https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/change-case.gif
+[Toggle Strikethrough in HTML animation]: https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/toggle-strikethrough-html.gif
+[Toggle Strikethrough in Markdown animation]: https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/toggle-strikethrough-markdown.gif
+[#1]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues/1
+[#2]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues/2
+[#11]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues/11
+[#9]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues/9
+[#5]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues/5
+[#19]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/issues/19
+[changelog url]: https://github.com/SherpadNdabambi/vsc-html-markdown-shortcuts/blob/main/CHANGELOG.md
 [HTML5 badge url]: https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg
 [W3C url]: https://www.w3.org/html/logo/index.html
 [Markdown mark url]: https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg
@@ -232,9 +232,9 @@ Distributed under the DBAD License. See [LICENSE][License url] for more informat
 [SVG Repo url]: https://www.svgrepo.com/
 [Ctrl A url]: https://www.svgrepo.com/svg/371190/ctrl-a
 [Spacebar url]: https://www.svgrepo.com/svg/311219/spacebar
-[Website icon url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/website-icon.png
+[Website icon url]: https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/website-icon.png
 [SVG website icon url]: https://www.svgrepo.com/svg/415803/website-ui-web
-[Gmail icon url]: https://raw.githubusercontent.com/sherpadndabambi/html-markdown-shortcuts/main/img/gmail-icon.png
+[Gmail icon url]: https://raw.githubusercontent.com/SherpadNdabambi/vsc-html-markdown-shortcuts/main/img/gmail-icon.png
 [Gmail SVG vector url]: https://www.svgrepo.com/svg/349379/gmail-old
 [TinyPNG url]: https://tinypng.com/
 [Typescript shield]: https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white

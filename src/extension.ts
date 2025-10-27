@@ -202,7 +202,10 @@ export function activate(context: vscode.ExtensionContext) {
           const insertPos = firstHeading
             ? doc.positionAt(firstHeading.index! + firstHeading[0].length)
             : new vscode.Position(0, 0);
-          editBuilder.insert(insertPos, `\n${tocSection}\n`);
+          const insertString = firstHeading
+            ? `\n${tocSection}\n`
+            : `${tocSection}\n\n`;
+          editBuilder.insert(insertPos, insertString);
         }
       });
     }

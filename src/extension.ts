@@ -152,6 +152,7 @@ export function activate(context: vscode.ExtensionContext) {
       const tokens = md.parse(text, {});
 
       // Extract headings (h2 and below, skip "Table of Contents")
+      const seen = new Set<string>();
       const headings = tokens
         .map((t, i) => ({ t, originalIndex: i }))
         .filter(
@@ -174,10 +175,17 @@ export function activate(context: vscode.ExtensionContext) {
       // Generate numbered TOC
       let toc = "<details>\n\n   <summary>Contents</summary>\n\n";
       headings.forEach((h, i) => {
-        const slug = h.text
+        const baseSlug = h.text
           .toLowerCase()
           .replace(/\s+/g, "-")
           .replace(/[^a-z0-9-]/g, "");
+        let slug = baseSlug;
+        let count = 0;
+        while (seen.has(slug)) {
+          count++;
+          slug = baseSlug + "-" + count;
+        }
+        seen.add(slug);
         const indent = "   ".repeat(h.level - 2);
         toc += `${indent}1. [${h.text}](#${slug})\n`;
       });
